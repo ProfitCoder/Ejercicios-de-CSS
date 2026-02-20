@@ -1,0 +1,33 @@
+b {
+    
+    color:red;
+}
+
+h3 {
+    color: blue;
+}
+
+.prueba {
+  text-decoration: overline underline ;
+  padding: 4px 0;
+}
+
+#prueba2{
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 4rem;
+}
+
+h3{
+    b{
+        text-decoration: underline;
+    }
+}
+
+a:hover{
+    color: green;
+}
+
+a:visited{
+    color: red;
+}

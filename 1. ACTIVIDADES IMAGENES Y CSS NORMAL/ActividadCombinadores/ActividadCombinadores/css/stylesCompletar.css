@@ -1,0 +1,77 @@
+/* =========================================
+   1. ESTILOS BASE (Para visualizar la estructura)
+   ========================================= */
+
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+/* Damos estilo al contenedor padre para verlo claramente */
+.contenedor-principal {
+    border: 3px solid #333; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+/* Damos estilo a la caja hija para diferenciar niveles de profundidad */
+.caja-hija {
+    border: 2px dashed #666; 
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #fff;
+    margin-left: 20px; 
+}
+
+/* Etiquetas para identificar visualmente las cajas */
+.contenedor-principal::before {
+    content: "DIV .contenedor-principal (Padre)";
+    font-size: 0.8em;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.caja-hija::before {
+    content: "DIV .caja-hija (Nieto)";
+    font-size: 0.8em;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* ========================================================
+   2. SOLUCIÓN A LAS ACTIVIDADES PROPUESTAS (COMBINADORES)
+   ======================================================== */
+
+/* -- Combinador de descendientes --- */
+/* Texto ROJO en TODOS los párrafos dentro del principal.
+   Afecta a hijos directos y a los que están dentro de .caja-hija */
+.contenedor-principal p{
+    color: red;
+}
+
+
+/* -- Combinador de hijo directo (>) --- */
+/* Borde AZUL solo a los hijos directos.
+   Nota: Los párrafos dentro de .caja-hija NO tendrán este borde
+   porque no son hijos directos de .contenedor-principal */
+.contenedor-principal > p{
+    border:  4px solid blue;
+    padding: 5px;       
+}
+
+/* -- Combinador de hermano adyacente (+) --- */
+/* Fondo AMARILLO solo al párrafo pegado al h2.
+   Solo afecta al párrafo con clase "intro" en este HTML */
+h2+p{
+    background-color: yellow;
+}
+
+/* --- Combinador general de hermanos (~) --- */
+/* Negrita a TODOS los párrafos después del h2.   */
+h2~p{
+    font-weight: bold;
+}

@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*En font family unas estan con color y otras no
+porque la fuente que esta subrayada viene preinstalada
+el el navegador para la visualizacion, 
+en cambio las que no estan subrayadas no estan preinstaladas*/
+
+body{
+    font-family: Georgia, Cambria , serif; 
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: Verdana, sans-serif;
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 4.8rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+.container{
+    max-width: 1000px;
+    min-width: 100vh;
+    margin: 0 auto;
+}
+
+img {
+    border: 2px solid blueviolet;
+    max-width: 100%;
+    height: auto;
+}
+
+acronym{
+    font-style: italic;
+    background-color: black;
+    color: white;
+    padding: 0.2rem 0.4rem;
+}
+
+/*10. Por el orden de prioridad, el unico que lo supera es el !important*/
+
+/*11. La diferencia es que el font-size en 300% lo que hace es crecer un x3 el tamaño del texto siempre, 
+y con el 3rem depende del navegador ya que el tamaño va a ser relativo dependiendo en que navegador abramos la página web.*/
+
+/*12. La diferencia va a ser que de manera predeterminada la "line-height" suele estar por defecto a 1.0, 
+por lo que al tenerla a 1.2 se subira el texto un poco más para arriba pegandose al margen superior*/
