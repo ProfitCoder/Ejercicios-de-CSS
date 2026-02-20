@@ -1,0 +1,46 @@
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+}
+
+a:visited {
+    color: purple;
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+thead th::first-letter {
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+tbody tr td:first-child {
+    background-color: green;
+}
+
+tbody tr:nth-child(3) th:nth-child(2){
+    background-color: yellow;
+}
+
+tr td:last-child:hover {
+    font-size: 2em;
+}
+
+label::after{
+    content: "*";
+    color: red;
+}
+
+input:required   {
+    border: 1px solid red;
+}

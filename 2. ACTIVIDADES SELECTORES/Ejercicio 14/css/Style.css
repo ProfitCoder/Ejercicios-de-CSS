@@ -1,0 +1,41 @@
+.caja{
+    border: 4px solid red;
+    padding: 10px;
+    width: 400px;
+}
+
+
+/* 
+
+Para saber como hacer lo de los numeros
+he tenido que ayudarme de la IA y de información externa
+
+*/
+
+ol > li{
+    margin: 4px 0;
+}
+
+ol > li::before{
+    content: counter(nivel1) ". ";
+}
+
+ol > li > ol{
+    counter: counter(nivel1);
+}
+
+ol > li > ol > li{
+    counter: counter(nivel1);
+}
+
+ol > li > ol > li::before{
+    content: counter(nivel1) "." counter(nivel2) ". ";
+}
+
+ol > li > ol > li > ol > li{
+    counter-increment: nivel3;
+}
+
+ol > li > ol > li > ol > li::before{
+    content: counter(nivel1) "." counter(nivel2) "." counter(nivel3) ". ";
+}

@@ -1,0 +1,72 @@
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td{
+  border: 2px solid #000;
+  width: 90px;
+  height: 28px;
+  text-align: center;
+}
+
+table:first-of-type td:nth-child(1) {
+     background: white; 
+}
+
+table:first-of-type td:nth-child(2) { 
+    background: red; 
+}
+
+table:first-of-type td:nth-child(3) { 
+    background: green; 
+}
+
+table:first-of-type td:nth-child(4) { 
+    background: blue; 
+}
+
+table:first-of-type tr:nth-child(1) td { 
+    color: teal; 
+}
+
+table:first-of-type tr:nth-child(2) td { 
+    color: red; 
+}
+
+table:first-of-type tr:nth-child(3) td {
+     color: blue; 
+}
+
+table:first-of-type tr:nth-child(4) td { 
+    color: orange; 
+}
+
+table:first-of-type tr:nth-child(5) td { 
+    color: purple; 
+}
+
+table:first-of-type tr:nth-child(6) td { 
+    color: olive; 
+}
+
+table:first-of-type tr:nth-child(7) td { 
+    color: fuchsia; 
+}
+
+table:first-of-type tr:nth-child(8) td { 
+    color: green; 
+}
+
+table:last-of-type tr:nth-child(odd) td{
+  background: AliceBlue;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+
+table:last-of-type tr:nth-child(even) td{
+  background: CadetBlue;
+  color: #fff;
+  font-weight: bold;
+}
