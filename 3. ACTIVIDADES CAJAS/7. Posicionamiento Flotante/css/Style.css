@@ -1,0 +1,35 @@
+body{
+    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    margin: auto;
+    color: blue;
+    font-size: xx-large;
+    letter-spacing: 0.7em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p{
+    width: 20%;
+    height: 250px;
+    padding: 10px 50px 20px;
+    float: left;
+    margin: 20px;
+    overflow: auto;
+    border: 2px solid black;
+    border-style: dotted;
+    background-color: lightblue;
+    font-size: medium;
+    font-style: italic;
+    text-align: left;
+}
+
+p::first-letter{
+    float: left
+    color: rgb(64, 64, 132);
+    font-size: 3em;
+    font-style: italic;
+}

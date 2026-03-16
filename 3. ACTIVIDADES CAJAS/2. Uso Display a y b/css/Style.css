@@ -1,0 +1,9 @@
+p {
+    display: block;
+}
+
+ul{
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+}

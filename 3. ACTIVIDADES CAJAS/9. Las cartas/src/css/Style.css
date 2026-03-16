@@ -1,0 +1,68 @@
+div{
+    position: absolute;
+}
+
+#as_bastos{
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+}
+
+#dos_bastos{
+    top: 15%;
+    left: 12%;
+    z-index: 2;
+}
+
+#as_copas{
+    top: 20%;
+    left: 14%;
+    z-index: 3;
+}
+
+#as_espadas{
+    top: 25%;
+    left: 16%;
+    z-index: 4;
+}
+
+#as_oros{
+    top: 30%;
+    left: 18%;
+    z-index: 5;
+}
+
+img{
+    border-radius: 7px;
+    box-shadow: 5px 5px 12px gray;
+}
+
+#as_bastos:hover{
+    top: 1%;
+    left: 10%;
+    z-index: 1;
+}
+
+#dos_bastos:hover{
+    top: 5%;
+    left: 12%;
+    z-index: 2;
+}
+
+#as_copas:hover{
+    top: 8%;
+    left: 14%;
+    z-index: 3;
+}
+
+#as_espadas:hover{
+    top: 12%;
+    left: 16%;
+    z-index: 4;
+}
+
+#as_oros:hover{
+    top: 16%;
+    left: 18%;
+    z-index: 5;
+}

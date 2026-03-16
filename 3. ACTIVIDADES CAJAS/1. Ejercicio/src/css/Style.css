@@ -1,0 +1,72 @@
+body{
+  margin: 0;
+}
+
+header{
+  background-color: bisque;
+  padding: 2rem;
+}
+
+header nav{
+  background-color: rgb(171, 171, 255);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+section{
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+
+  width: 90%;
+  margin: 2rem auto;
+  min-height: 220px;
+  padding: 1.5rem;
+}
+
+section article{
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+main section:first-of-type{
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+/* Artículo ocupa el resto y queda centrado */
+main section:first-of-type article{
+  flex: 1;
+  order: 2;            /* para que quede a la derecha de los asides */
+  padding-top: 0.5rem;
+}
+
+/* Asides: columna a la izquierda */
+main section:first-of-type aside{
+  width: 220px;
+  order: 1;
+  background: rgba(128, 0, 128, 0.6);
+  color: black;          /* como en tu captura, texto oscuro */
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+main section:first-of-type aside + aside{
+  margin-top: 1rem;
+}
+
+main section:nth-of-type(2) article{
+  padding-top: 0.5rem;
+}
+
+footer{
+  background: coral;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+#divInterior{ 
+    background-color: orange;
+    width: 100%;
+    height: 100%;
+}
+
+#divExterior{
+    width: 50%;
+    height: 200px;
+    margin: 0px;
+    padding: 10px;
+    border-width: 5px;
+
+    border-style: solid;
+    border-color: brown;
+    background-color: yellow;
+}

@@ -1,0 +1,17 @@
+#p1{
+    color: white;
+    background-color: red;
+    float: left;
+}
+
+#p2{
+    color: white;
+    background-color: green;
+    float: inline-end;
+}
+
+#p3{
+    color: white;
+    background-color: blue;
+    float: inline-start;
+}
